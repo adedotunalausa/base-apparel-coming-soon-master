@@ -1,0 +1,108 @@
+
+.bg-pattern {
+  background-image: url("images/bg-pattern-desktop.svg");
+}
+
+.container, .row {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.col-lg-7 {
+  padding: 5% 0 0 8%;
+}
+
+.col-lg-5 {
+  padding-left: 0;
+}
+
+.we {
+  color: hsl(0, 36%, 70%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 15px;
+  margin: 20% 0 0 0;
+  padding-bottom: 0;
+}
+
+.coming {
+  color: hsl(0, 6%, 24%);
+  width: 55%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 15px;
+  padding-top: 0;
+}
+
+.Hello-fellow {
+  color: hsl(0, 36%, 70%);
+  width: 70%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 3% 0 0 0;
+  line-height: 1.8rem;
+  font-size: 0.9rem;
+}
+
+input {
+  color: hsl(0, 36%, 70%);
+  font-family: 'Josefin Sans', sans-serif;
+  height: 52px;
+  width: 400px;
+  margin: 6% 0 0 0;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 0.08em;
+  padding-left: 30px;
+}
+
+input:invalid {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsl(0, 36%, 70%);
+  opacity: 0.4; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: hsl(0, 36%, 70%);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: hsl(0, 36%, 70%);
+}
+
+
+.gradient-button {
+  margin: 0 0 0 -90px;
+  background-image: linear-gradient(to right, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 91%);
+  height: 52px;
+  width: 95px;
+  border-radius: 30px;
+  border-style: none;
+  border-width: 0.08em;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  box-shadow: 0 10px 15px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-button:hover {
+  background-color: #fff;
+  background-image: linear-gradient(to right, hsl(0, 80%, 86%) 70%, hsl(0, 36%, 82%) 98%);
+  box-shadow: 0 15px 15px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+  position: relative;
+  right: 60px;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
