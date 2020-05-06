@@ -3,7 +3,11 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+button:focus, input:focus {
+  outline: none;
+}
+
+@media (min-width: 320px) {
   .inner-container {
     flex-direction: column-reverse;
   }
@@ -23,10 +27,11 @@ body {
     content: url("images/hero-mobile.jpg");
     margin-top: 25%;
     width: 104%;
-
   }
 
   .bg-pattern {
+    background-position: center;
+    background-color: #FFF3F3;
     background-image: url("images/bg-pattern-desktop.svg");
   }
 
@@ -34,10 +39,10 @@ body {
     text-align: center;
     color: hsl(0, 36%, 70%);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 300;
     letter-spacing: 12px;
-    margin: 15% 0 0 0;
+    margin: 10% 0 0 0;
     padding-bottom: 0;
   }
 
@@ -45,7 +50,7 @@ body {
     text-align: center;
     color: hsl(0, 6%, 24%);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 600;
     letter-spacing: 10px;
     padding: 0;
@@ -55,10 +60,9 @@ body {
     text-align: center;
     color: hsl(0, 36%, 70%);
     font-family: 'Josefin Sans', sans-serif;
-    /* margin: 3% 0 0 0; */
     line-height: 1.7rem;
-    font-size: 1rem;
-    padding: 0 15px 0 15px;
+    font-size: 0.95rem;
+    padding: 0 3% 0 3%;
   }
 
   input {
@@ -66,7 +70,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     height: 55px;
     width: 330px;
-    margin: 6% 0 0 7%;
+    margin: 6% 0 0 6%;
     border-radius: 30px;
     border-style: solid;
     border-width: 0.08em;
@@ -139,59 +143,100 @@ body {
 }
 
 @media (min-width: 410px) and (max-width: 600px) {
-  .arrow {
-    position: absolute;
-    right: 87px;
-    bottom: 110px;
-  }
 
   .logo {
-    width: 30%;
     position: relative;
     bottom: 335px;
     left: 45px;
   }
-}
 
-@media (min-width: 600px) and (max-width: 900px) {
-
-  .inner-container {
-    flex-direction: column-reverse;
+  .Hello-fellow {
+    font-size: 1rem;
+    padding: 0 5% 0 5%;
   }
 
-  .col-sm-12 {
-    padding-left: 0;
+  input {
+    margin: 6% 0 0 10%;
   }
 
-  .logo {
-    width: 30%;
-    position: relative;
-    /* bottom: 335px;
-    left: 45px; */
+  .gradient-button {
+    margin: 0 0 0 73%;
   }
 
   .arrow {
     position: absolute;
-    right: 87px;
+    right: 80px;
     bottom: 110px;
   }
 
-  .hero {
-    content: url("images/hero-mobile.jpg");
-    margin-top: 25%;
-    width: 102%;
+}
 
+@media (min-width: 600px) and (max-width: 900px) {
+
+  .container, .row {
+    padding: 0;
   }
 
-  .bg-pattern {
-    background-image: url("images/bg-pattern-desktop.svg");
+  .logo {
+    width: 25%;
+    position: absolute;
+    bottom: 212%;
+  }
+
+  .hero {
+    margin-top: 20%;
+    width: 102%;
+  }
+
+  .we {
+    font-size: 3rem;
+    margin: 10% 0 0 0;
+  }
+
+  .coming {
+    font-size: 3rem;
+    padding: 0 5%;
+  }
+
+  .Hello-fellow {
+    font-size: 1.2rem;
+    padding: 0 20%;
+  }
+
+  input {
+    width: 400px;
+    margin: 6% 0 0 35%;
+  }
+
+  .error-icon {
+    position: relative;
+    left:442px;
+    bottom: 40px;
+  }
+
+  .gradient-button {
+    margin: 0 0 0 480px;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 220px;
+    bottom: 110px;
   }
 
 }
 
 @media (min-width: 992px) {
-  .bg-pattern {
-    background-image: url("images/bg-pattern-desktop.svg");
+
+  .logo {
+    width: 20%;
+    position: absolute;
+    bottom: 720px;
+    left: 90px;
+  }
+
+  .inner-container {
+    flex-direction: row;
   }
 
   .container, .row {
@@ -200,58 +245,50 @@ body {
   }
 
   .col-lg-7 {
-    padding: 5% 0 0 8%;
+    padding: 15% 0 0 8%;
   }
 
   .col-lg-5 {
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .we {
-    color: hsl(0, 36%, 70%);
-    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
     font-size: 3.5rem;
-    font-weight: 300;
     letter-spacing: 15px;
-    margin: 20% 0 0 0;
+    margin: 0 0 0 0;
     padding-bottom: 0;
   }
 
   .coming {
+    text-align: left;
     color: hsl(0, 6%, 24%);
     width: 55%;
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 3.5rem;
-    font-weight: 600;
     letter-spacing: 15px;
     padding-top: 0;
   }
 
   .Hello-fellow {
-    color: hsl(0, 36%, 70%);
+    text-align: left;
     width: 70%;
-    font-family: 'Josefin Sans', sans-serif;
     margin: 3% 0 0 0;
     line-height: 1.8rem;
     font-size: 0.9rem;
+    padding: 0;
   }
 
   input {
-    color: hsl(0, 36%, 70%);
-    font-family: 'Josefin Sans', sans-serif;
     height: 52px;
     width: 400px;
     margin: 6% 0 0 0;
-    border-radius: 30px;
-    border-style: solid;
-    border-width: 0.08em;
-    padding-left: 30px;
   }
 
   .error-icon {
-    visibility: hidden;
     position: relative;
-    right: 100px;
+    left: -100px;
+    top: 0;
   }
 
   .error-icon-visible {
@@ -263,45 +300,16 @@ body {
   }
 
   .error {
-    font-family: 'Josefin Sans', sans-serif;
-    display: block;
     width: 40%;
-    padding: 0;
     font-size: 0.8rem;
-    color: hsl(0, 93%, 68%);
-    margin: 10px 0 0 30px;
-    position: absolute;
-  }
-
-  ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: hsl(0, 36%, 70%);
-    opacity: 0.4;
-    /* Firefox */
-  }
-
-  :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: hsl(0, 36%, 70%);
-  }
-
-  ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: hsl(0, 36%, 70%);
   }
 
   .gradient-button {
     margin: 0 0 0 -90px;
-    background-image: linear-gradient(to right, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 91%);
     height: 52px;
     width: 95px;
-    border-radius: 30px;
-    border-style: none;
-    border-width: 0.08em;
-    cursor: pointer;
     position: relative;
     top: 20px;
-    box-shadow: 0 10px 15px 0.1px rgba(0, 0, 0, 0.1);
   }
 
   .gradient-button:hover {
@@ -312,7 +320,14 @@ body {
 
   .arrow {
     position: relative;
-    right: 60px;
+    right: 56px;
+    top: 0;
+  }
+
+  .hero {
+    content: url("images/hero-desktop.jpg");
+    margin-top: 0;
+    width: 130%;
   }
 
 }
@@ -325,3 +340,5 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* and (max-width: 900px) */
