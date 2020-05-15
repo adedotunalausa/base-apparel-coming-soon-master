@@ -171,7 +171,29 @@ button:focus, input:focus {
 
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 759px) {
+  .logo {
+    width: 30%;
+    position: absolute;
+    bottom: 840px;
+  }
+
+  input {
+    margin-left: 27%;
+  }
+
+  .gradient-button {
+    margin-left: 68%;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 140px;
+    bottom: 110px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 992px) {
 
   .container, .row {
     padding: 0;
